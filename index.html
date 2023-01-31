@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KalorienRechner</title>
+    <link rel="stylesheet" href="assets/scss/style.css">
+</head>
+
+<body>
+    <section class="sec">
+        <h1 class="sec-head1">Kalorien Rechner</h1>
+        
+        <!--============== Körpergröße/ Alter / Gewicht=============-->
+
+        <form action="">
+            <label for="" class="sec-head3">Körpergröße</label>
+            <br><input type="number" name="" id="größe" class="sec-div" placeholder="0 cm">
+            <br><label for="" class="sec-head3">Alter</label>
+            <br><input type="number" name="" id="alter" class="sec-div" placeholder="0">
+            <br><label for="" class=" sec-head3">Gewicht</label>
+            <br><input type="number" name="" id="gewicht" class="sec-div" placeholder="0 kg">
+        </form>
+
+        <!--=============Körperbau: weiblch // männlich===============-->
+
+        <h3 class="sec-head3">Körperbau</h3>
+        <form action="" id="geschlecht">
+            <input type="radio" name="fine" id="frauen" value="">
+            <label for="">weiblich</label>
+            <br><input type="radio" name="fine" id="männer" value="">
+            <label for="">männlich</label>
+            <br><label for="" class="sec-head3">Arbeits-und Freizeitaktivität</label>
+
+
+            <!--===============Aktivität ===================-->
+
+
+            <select name="aktivität" id="aktivität" class="sec-div">
+
+                <option value="schlafen">Schlafen</option>
+                <option value="sitzen">Nur Sitzen oder Liegen</option>
+                <option value="freizeit">Ausschließlich sitzende Tätigkeit mit wenig Aktivität</option>
+                <option value="sitzendetätigkeit"> Sitzende Tätigkeit mit mäßiger Bewegung</option>
+                <option value="stehendetätigkeit">Überwiegend gehende oder stehende Tätigkeit</option>
+                <option value="arbeit">Körperlich anstrengende berufliche Arbeit</option>
+
+            </select>
+
+        </form>
+
+            <!--  ========== SUBMIT BUTTON ============= -->
+
+        <button class="sec-button" onclick="kalorienRechner()">Submit</button>
+       
+        <!--===============  AUSGABE ===================--->
+
+
+        <!-- <div id="result1">
+            <h2>Grundumsatz:</h2>
+        </div>
+        <div id="result2">
+            <h2>Gesamtumsatz:</h2>
+        </div> -->
+
+      <table class="sec-table">
+            <tr>
+                <th class="sec-table-thead"></th>
+                <th>Kcal</th>
+                <th>Kj</th>
+            </tr>
+            <tr>
+                <th class="sec-table-thead">Grundumsatz</th>
+                <td id="GrEr-kcal" class="sec-table-td"></td>
+                <td id="GrEr-kj" class="sec-table-td"></td>
+            </tr>
+            <tr>
+                <th class="sec-table-thead">Gesamtumsatz</th>
+                <td id="GeEr-kcal" class="sec-table-td"></td>
+                <td id="GeEr-kj" class="sec-table-td"></td>
+            </tr>
+        </table> 
+
+
+        
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
